@@ -6,9 +6,9 @@ const languages = [
 
 const translations = {
   en: {
-    "meta.home.title": "DJ HEYCO | Premium DJ Artist in Santo Domingo",
+    "meta.home.title": "DJ Heyco | Premium DJ for Events, Clubs & Private Celebrations",
     "meta.experience.title": "Experience | DJ HEYCO",
-    "meta.bookings.title": "Bookings | DJ HEYCO",
+    "meta.bookings.title": "Book DJ Heyco | Events, Weddings, Clubs & Private Parties",
     "nav.home": "Home",
     "nav.experience": "Experience",
     "nav.bookings": "Bookings",
@@ -370,21 +370,57 @@ function buildLanguageSwitchers() {
   });
 }
 
+let lockedScrollY = 0;
+
+function lockBodyScroll() {
+  lockedScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+  document.body.style.top = `-${lockedScrollY}px`;
+  document.body.classList.add("menu-open");
+}
+
+function unlockBodyScroll() {
+  document.body.classList.remove("menu-open");
+  document.body.style.top = "";
+  window.scrollTo(0, lockedScrollY);
+}
+
 function initMenu() {
   const toggle = document.querySelector("[data-menu-toggle]");
   const menu = document.querySelector("[data-mobile-menu]");
   if (!toggle || !menu) return;
+
+  const closeButtons = document.querySelectorAll("[data-menu-close]");
+
+  const openMenu = () => {
+    menu.classList.add("is-open");
+    toggle.setAttribute("aria-expanded", "true");
+    lockBodyScroll();
+  };
+
+  const closeMenu = () => {
+    menu.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+    unlockBodyScroll();
+  };
+
   toggle.addEventListener("click", () => {
-    const isOpen = menu.classList.toggle("is-open");
-    document.body.classList.toggle("menu-open", isOpen);
-    toggle.setAttribute("aria-expanded", String(isOpen));
+    if (menu.classList.contains("is-open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
+
+  closeButtons.forEach((button) => button.addEventListener("click", closeMenu));
+
   menu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      menu.classList.remove("is-open");
-      document.body.classList.remove("menu-open");
-      toggle.setAttribute("aria-expanded", "false");
+      closeMenu();
     });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menu.classList.contains("is-open")) closeMenu();
   });
 }
 

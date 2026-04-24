@@ -72,6 +72,9 @@
 
   <main>
     <section class="hero home-hero">
+      <div class="hero-video-layer" aria-hidden="true">
+        <video src="assets/video/hero-nightlife.mp4" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
       <div class="hero-copy reveal">
         <p class="eyebrow" data-i18n="home.hero.eyebrow">Santo Domingo based DJ artist</p>
         <h1 data-i18n="home.hero.title">DJ Heyco - Sound. Presence. Experience.</h1>
@@ -138,13 +141,16 @@
 
     <section class="section media-section">
       <div class="media-copy reveal">
-        <p class="eyebrow" data-i18n="home.video.eyebrow">Live energy</p>
+        <p class="eyebrow" data-i18n="home.video.eyebrow">Crowd Energy Preview</p>
         <h2 data-i18n="home.video.title">A preview of the room in motion.</h2>
-        <p data-i18n="home.video.text">See the performance energy before you make the call.</p>
+        <p data-i18n="home.video.text">A cinematic glimpse of the movement, atmosphere, and event energy behind the DJ Heyco experience.</p>
         <a class="btn btn-outline" href="bookings.html" data-i18n="cta.bookingInquiry">Start a Booking Inquiry</a>
       </div>
-      <div class="video-frame reveal delay-1">
-        <video src="assets/video/heyco-live.mp4" controls playsinline preload="metadata"></video>
+      <div class="video-frame cinematic landscape reveal delay-1" aria-label="Crowd energy preview">
+        <video src="assets/video/crowd-energy.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="video-caption">
+          <span data-i18n="home.video.label">Crowd Energy Preview</span>
+        </div>
       </div>
     </section>
 

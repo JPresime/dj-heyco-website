@@ -6,8 +6,8 @@ const languages = [
 
 const translations = {
   en: {
-    "meta.home.title": "DJ Heyco | Premium DJ for Events, Clubs & Private Celebrations",
-    "meta.experience.title": "Experience | DJ HEYCO",
+    "meta.home.title": "DJ Heyco | Premium DJ for Clubs, Weddings & Private Events",
+    "meta.experience.title": "Experience | DJ Heyco Sound, Energy & Nightlife Presence",
     "meta.bookings.title": "Book DJ Heyco | Events, Weddings, Clubs & Private Parties",
     "nav.home": "Home",
     "nav.experience": "Experience",
@@ -47,9 +47,10 @@ const translations = {
     "home.why.card3.text": "A serious artist image with the polish expected from professional events.",
     "home.services.eyebrow": "Services",
     "home.services.title": "Event formats with a tailored sound.",
-    "home.video.eyebrow": "Live energy",
+    "home.video.eyebrow": "Crowd Energy Preview",
     "home.video.title": "A preview of the room in motion.",
-    "home.video.text": "See the performance energy before you make the call.",
+    "home.video.text": "A cinematic glimpse of the movement, atmosphere, and event energy behind the DJ Heyco experience.",
+    "home.video.label": "Crowd Energy Preview",
     "home.final.title": "Make the next event feel intentional.",
     "experience.hero.eyebrow": "Experience / Media",
     "experience.hero.title": "The right sound for the right moment.",
@@ -68,9 +69,10 @@ const translations = {
     "experience.gallery.eyebrow": "Visual identity",
     "experience.gallery.title": "Image that feels as intentional as the set.",
     "experience.video.eyebrow": "Featured video",
-    "experience.video.title": "Performance energy, framed with purpose.",
-    "experience.presence.title": "Presence that carries the room.",
-    "experience.presence.text": "The experience is built on timing, taste, and the ability to move between sounds without breaking the atmosphere.",
+    "experience.video.title": "Built for Atmosphere",
+    "experience.video.label": "Atmosphere Preview",
+    "experience.presence.title": "Built for Atmosphere",
+    "experience.presence.text": "A visual preview of the kind of nightlife mood, rhythm, and movement DJ Heyco brings to every event.",
     "experience.final.title": "Bring the same energy to your event.",
     "bookings.hero.eyebrow": "Bookings",
     "bookings.hero.title": "Make the booking easy. Make the night memorable.",
@@ -88,6 +90,10 @@ const translations = {
     "bookings.process.two.text": "Align on timing, sound direction, and booking requirements.",
     "bookings.process.three.title": "Move the Room",
     "bookings.process.three.text": "Arrive ready with a set designed for the moment.",
+    "bookings.vibe.eyebrow": "Event Mood Preview",
+    "bookings.vibe.title": "Ready to Set the Mood?",
+    "bookings.vibe.text": "Bring premium sound, movement, and energy to your next event.",
+    "bookings.vibe.label": "Booking Vibe Preview",
     "bookings.form.eyebrow": "Inquiry form",
     "bookings.form.title": "Start with the essentials.",
     "bookings.form.text": "The form prepares a professional email. For the fastest response, WhatsApp remains the primary booking channel.",
@@ -157,9 +163,10 @@ const translations = {
     "home.why.card3.text": "Una imagen artística seria con el pulido que esperan los eventos profesionales.",
     "home.services.eyebrow": "Servicios",
     "home.services.title": "Formatos de evento con sonido a medida.",
-    "home.video.eyebrow": "Energía en vivo",
+    "home.video.eyebrow": "Vista previa de energía del público",
     "home.video.title": "Una muestra del ambiente en movimiento.",
-    "home.video.text": "Mira la energía de la presentación antes de hacer la llamada.",
+    "home.video.text": "Una muestra cinematográfica del movimiento, ambiente y energía de evento detrás de la experiencia DJ Heyco.",
+    "home.video.label": "Vista previa de energía del público",
     "home.final.title": "Haz que el próximo evento se sienta intencional.",
     "experience.hero.eyebrow": "Experiencia / Media",
     "experience.hero.title": "El sonido correcto para el momento correcto.",
@@ -178,9 +185,10 @@ const translations = {
     "experience.gallery.eyebrow": "Identidad visual",
     "experience.gallery.title": "Imagen tan intencional como el set.",
     "experience.video.eyebrow": "Video destacado",
-    "experience.video.title": "Energía de performance, presentada con intención.",
-    "experience.presence.title": "Presencia que sostiene la sala.",
-    "experience.presence.text": "La experiencia se construye con timing, gusto y la capacidad de moverse entre sonidos sin romper la atmósfera.",
+    "experience.video.title": "Diseñado para crear ambiente",
+    "experience.video.label": "Vista previa de ambiente",
+    "experience.presence.title": "Diseñado para crear ambiente",
+    "experience.presence.text": "Una vista visual del tipo de energía nocturna, ritmo y movimiento que DJ Heyco lleva a cada evento.",
     "experience.final.title": "Lleva esa misma energía a tu evento.",
     "bookings.hero.eyebrow": "Reservas",
     "bookings.hero.title": "Reserva fácil. Noche memorable.",
@@ -198,6 +206,10 @@ const translations = {
     "bookings.process.two.text": "Alinear horarios, dirección musical y requisitos de reserva.",
     "bookings.process.three.title": "Mover la sala",
     "bookings.process.three.text": "Llegar listo con un set diseñado para el momento.",
+    "bookings.vibe.eyebrow": "Vista previa del ambiente",
+    "bookings.vibe.title": "¿Listo para crear el ambiente?",
+    "bookings.vibe.text": "Lleva sonido, movimiento y energía premium a tu próximo evento.",
+    "bookings.vibe.label": "Vista previa de reserva",
     "bookings.form.eyebrow": "Formulario",
     "bookings.form.title": "Empieza con lo esencial.",
     "bookings.form.text": "El formulario prepara un correo profesional. Para respuesta más rápida, WhatsApp sigue siendo el canal principal.",
@@ -267,9 +279,10 @@ const translations = {
     "home.why.card3.text": "Une image artistique sérieuse avec le niveau de finition attendu par les événements professionnels.",
     "home.services.eyebrow": "Services",
     "home.services.title": "Des formats d’événement avec un son sur mesure.",
-    "home.video.eyebrow": "Énergie live",
+    "home.video.eyebrow": "Aperçu de l’énergie du public",
     "home.video.title": "Un aperçu de la salle en mouvement.",
-    "home.video.text": "Découvrez l’énergie de performance avant de confirmer.",
+    "home.video.text": "Un aperçu cinématographique du mouvement, de l’ambiance et de l’énergie événementielle associés à l’expérience DJ Heyco.",
+    "home.video.label": "Aperçu de l’énergie du public",
     "home.final.title": "Donnez une vraie intention au prochain événement.",
     "experience.hero.eyebrow": "Expérience / Média",
     "experience.hero.title": "Le bon son pour le bon moment.",
@@ -288,9 +301,10 @@ const translations = {
     "experience.gallery.eyebrow": "Identité visuelle",
     "experience.gallery.title": "Une image aussi intentionnelle que le set.",
     "experience.video.eyebrow": "Vidéo à la une",
-    "experience.video.title": "Une énergie de performance cadrée avec intention.",
-    "experience.presence.title": "Une présence qui porte la salle.",
-    "experience.presence.text": "L’expérience repose sur le timing, le goût et la capacité à passer d’un son à l’autre sans casser l’atmosphère.",
+    "experience.video.title": "Pensé pour créer l’ambiance",
+    "experience.video.label": "Aperçu de l’ambiance",
+    "experience.presence.title": "Pensé pour créer l’ambiance",
+    "experience.presence.text": "Un aperçu visuel de l’énergie nightlife, du rythme et du mouvement que DJ Heyco apporte à chaque événement.",
     "experience.final.title": "Apportez cette même énergie à votre événement.",
     "bookings.hero.eyebrow": "Réservations",
     "bookings.hero.title": "Réservation simple. Soirée mémorable.",
@@ -308,6 +322,10 @@ const translations = {
     "bookings.process.two.text": "Aligner horaires, direction musicale et besoins de réservation.",
     "bookings.process.three.title": "Faire bouger la salle",
     "bookings.process.three.text": "Arriver prêt avec un set pensé pour le moment.",
+    "bookings.vibe.eyebrow": "Aperçu de l’ambiance",
+    "bookings.vibe.title": "Prêt à créer l’ambiance ?",
+    "bookings.vibe.text": "Apportez un son premium, du mouvement et de l’énergie à votre prochain événement.",
+    "bookings.vibe.label": "Aperçu réservation",
     "bookings.form.eyebrow": "Formulaire",
     "bookings.form.title": "Commencez par l’essentiel.",
     "bookings.form.text": "Le formulaire prépare un email professionnel. Pour la réponse la plus rapide, WhatsApp reste le canal principal.",
@@ -486,6 +504,24 @@ function initBookingForm() {
   });
 }
 
+function initAmbientVideos() {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const videos = document.querySelectorAll(".hero-video-layer video, .video-frame.cinematic video");
+
+  const syncMotionPreference = () => {
+    videos.forEach((video) => {
+      if (reduceMotion.matches) {
+        video.pause();
+      } else if (video.autoplay) {
+        video.play().catch(() => {});
+      }
+    });
+  };
+
+  syncMotionPreference();
+  reduceMotion.addEventListener?.("change", syncMotionPreference);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   buildLanguageSwitchers();
   setLanguage(currentLang());
@@ -495,4 +531,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initReveal();
   initFaq();
   initBookingForm();
+  initAmbientVideos();
 });

@@ -36,6 +36,7 @@ body.menu-open {
   overflow: hidden;
 }
 img, video { max-width: 100%; display: block; }
+iframe { display: block; }
 a { color: inherit; text-decoration: none; }
 button, input, textarea, select { font: inherit; }
 
@@ -325,6 +326,45 @@ h3 { font-size: 1.1rem; margin-bottom: 10px; }
   font-weight: 900;
   text-transform: uppercase;
 }
+.official-performance-section {
+  border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(217,181,104,0.045), rgba(255,255,255,0.014));
+}
+.official-performance-section .section-heading {
+  max-width: 780px;
+}
+.official-performance-section .section-heading p:not(.eyebrow) {
+  max-width: 620px;
+  color: var(--muted);
+}
+.official-video-shell {
+  max-width: 1040px;
+}
+.youtube-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 10px;
+  background:
+    linear-gradient(135deg, rgba(217,181,104,0.16), rgba(255,255,255,0.035)),
+    rgba(5,5,6,0.88);
+  box-shadow: var(--shadow);
+}
+.youtube-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: calc(var(--radius) - 2px);
+  background: #000;
+}
+.official-video-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
 .booking-vibe-section {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -420,6 +460,8 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold); backgroun
   .visual-tag { left: 18px; right: 18px; bottom: 18px; }
   .hero-video-layer { opacity: 0.24; }
   .video-frame.landscape video, .booking-video video { aspect-ratio: 4 / 5; max-height: 540px; }
+  .youtube-frame { padding: 7px; }
+  .official-video-actions { flex-direction: column; }
   .video-caption { left: 18px; right: 18px; bottom: 18px; }
   .statement-band { margin-left: 18px; margin-right: 18px; padding: 34px 0; }
   .site-footer { display: grid; justify-items: start; padding-bottom: calc(112px + env(safe-area-inset-bottom)); }
